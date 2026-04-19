@@ -1,0 +1,22 @@
+:root {
+    --color-bg: #f6f1ea;
+    --color-bg-warm: #ede4d8;
+    --color-ink: #1c1814;
+    --color-ink-muted: #4a4238;
+    --color-accent: #8b5a3c;
+    --color-accent-soft: #c4a484;
+    --color-clay: #b87d6a;
+    --color-line: rgba(28, 24, 20, 0.12);
+    --font-display: "Fraunces", Georgia, serif;
+    --font-body: "Source Sans 3", system-ui, sans-serif;
+    --space-xs: 0.35rem;
+    --space-sm: 0.75rem;
+    --space-md: 1.25rem;
+    --space-lg: 2rem;
+    --space-xl: 3.5rem;
+    --space-2xl: 5rem;
+    --text-sm: 0.875rem;
+    --text-xs: 0.75rem;
+    --max-width: 72rem;
+    --radius: 4px;
+}
