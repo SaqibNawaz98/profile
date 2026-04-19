@@ -9,8 +9,8 @@ on:
 jobs:
   bump-version:
     # Avoid re-bumping on the bot's own "chore: bump version to …" commits (would loop forever).
-    # (Use contains + == false instead of !startsWith so YAML does not treat `!` as a tag.)
-    if: ${{ github.event.head_commit == null || contains(github.event.head_commit.message, 'chore: bump version to') == false }}
+    # Quoted so YAML does not interpret `chore:` inside the expression as a mapping key.
+    if: "${{ github.event.head_commit == null || contains(github.event.head_commit.message, 'chore: bump version to') == false }}"
     runs-on: ubuntu-latest
     permissions:
       contents: write
